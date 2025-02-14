@@ -17,7 +17,7 @@
 
     <style name="style_tv_deafult" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/inter_regular</item>
-        <item name="android:textColor">@color/light_grey_tv</item>
+        <item name="android:textColor">@color/lightGreyTv</item>
         <item name="android:textSize">@dimen/tv_secondary</item>
     </style>
 
@@ -26,5 +26,12 @@
         <item name="tabBackground">@drawable/vector_dot_indicator_selector</item>
         <item name="tabGravity">start</item>
         <item name="tabIndicatorHeight">0dp</item>
+    </style>
+
+    <style name="style_tv_list">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/tv_list</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/grey</item>
     </style>
 </resources>

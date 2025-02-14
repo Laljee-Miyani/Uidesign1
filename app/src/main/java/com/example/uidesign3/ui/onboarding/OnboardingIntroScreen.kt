@@ -1,5 +1,6 @@
 package com.example.uidesign3.ui.onboarding
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -32,5 +33,10 @@ class OnboardingIntroScreen : AppCompatActivity() {
         binding.photosViewpager.adapter = adapter
 
         TabLayoutMediator(binding.tabLayout, binding.photosViewpager) { _, _ -> }.attach()
+
+        binding.button.setOnClickListener {
+            val intent = Intent(this, OnboardingSubscriptionPlansActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

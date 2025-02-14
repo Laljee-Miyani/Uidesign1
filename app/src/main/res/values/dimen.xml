@@ -10,6 +10,9 @@
 
     <dimen name="margin_bottom_default">24dp</dimen>
 
+    <dimen name="margin_tv_top_primary">40dp</dimen>
+    <dimen name="margin_tv_top_secondary">16dp</dimen>
+
     <dimen name="paddibg10dp">10dp</dimen>
 
 
@@ -17,4 +20,5 @@
 <!--    text dimens-->
     <dimen name="tv_primary">24dp</dimen>
     <dimen name="tv_secondary">12dp</dimen>
+    <dimen name="tv_list">14dp</dimen>
 </resources>
