@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">UiDesign3</string>
+    <string name="next">Next</string>
+    <string name="onboarding_text">Enjoy these pre-made components and worry only\nabout creating the best product ever.</string>
+    <string name="create_a_prototype_in_just_na_few_minutes">Create a prototype in just\na few minutes</string>
 </resources>

@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#006FFD</color>
     <color name="grey">#1F2024</color>
+    <color name="selected_dot">#006FFD</color>
+    <color name="unselected_dot">#1A1F2024</color>
+    <color name="light_grey">#71727A</color>
+    <color name="light_grey_tv">#7D7D7D</color>
 </resources>

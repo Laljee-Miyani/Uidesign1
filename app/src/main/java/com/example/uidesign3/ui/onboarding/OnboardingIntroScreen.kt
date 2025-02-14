@@ -5,10 +5,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.denzcoskun.imageslider.constants.ScaleTypes
-import com.denzcoskun.imageslider.models.SlideModel
-import com.example.uidesign3.R
 import com.example.uidesign3.databinding.ActivityOnboardingIntroScreenBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
 class OnboardingIntroScreen : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingIntroScreenBinding
@@ -24,12 +22,15 @@ class OnboardingIntroScreen : AppCompatActivity() {
             insets
         }
 
-        val imageList = ArrayList<SlideModel>()
+        val imageUrls = listOf(
+            "https://picsum.photos/800/500?random=1",
+            "https://picsum.photos/800/500?random=2",
+            "https://picsum.photos/800/500?random=3"
+        )
 
-        // Adding demo images
-        imageList.add(SlideModel(R.drawable.img_onboarding, "Image 1"))
-        imageList.add(SlideModel(R.drawable.img_onboarding, "Image 2"))
-        imageList.add(SlideModel(R.drawable.img_onboarding, "Image 3"))
-        binding.imageSlider.setImageList(imageList, ScaleTypes.FIT)
+        val adapter = ImagePagerAdapter(this, imageUrls)
+        binding.photosViewpager.adapter = adapter
+
+        TabLayoutMediator(binding.tabLayout, binding.photosViewpager) { _, _ -> }.attach()
     }
 }

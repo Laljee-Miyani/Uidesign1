@@ -1,86 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:background="#FFFFFF"
-    android:layout_height="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
-    <com.denzcoskun.imageslider.ImageSlider
-        android:background="#EAF2FF"
-        android:id="@+id/image_slider"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/photos_viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        app:iss_delay="0"
-        app:iss_period="3000" />
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        android:layout_marginBottom="@dimen/margin_default_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_height="306dp"
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:padding="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_slider">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <View
-                android:background="#006FFD"
-                android:layout_height="8dp"
-                android:layout_width="8dp"
-                android:radius="24dp" />
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_dot_indicator"
+                android:background="@android:color/transparent"
+                android:layout_marginStart="@dimen/margin_default_horizontal" />
 
-            <View
-                android:alpha="0.1"
-                android:background="#1F2024"
-                android:layout_height="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_width="8dp" />
+            <TextView
+                style="@style/style_tv_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+                android:layout_marginTop="@dimen/margin_default_vertical_half"
+                android:layout_marginBottom="@dimen/margin_default_vertical"
+                android:text="@string/create_a_prototype_in_just_na_few_minutes" />
 
-            <View
-                android:alpha="0.1"
-                android:background="#1F2024"
-                android:layout_height="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_width="8dp" />
+            <TextView
+                style="@style/style_tv_deafult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_default_horizontal"
+                android:layout_marginBottom="@dimen/margin_bottom_default"
+                android:text="@string/onboarding_text" />
         </LinearLayout>
 
-        <TextView
-            android:fontFamily="@font/inter_bold"
-            android:layout_height="58dp"
-            android:layout_marginTop="32dp"
-            android:layout_width="311dp"
-            android:lineSpacingExtra="4sp"
-            android:text="Create a prototype in just\na few minutes"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+    </ScrollView>
 
-        <TextView
-            android:fontFamily="@font/inter_regular"
-            android:layout_height="32dp"
-            android:layout_marginTop="24dp"
-            android:layout_width="311dp"
-            android:lineSpacingExtra="2sp"
-            android:text="Enjoy these pre-made components and worry only\nabout creating the best product ever."
-            android:textColor="#71727A"
-            android:textSize="12sp" />
-
-        <Button
-            android:backgroundTint="#006FFD"
-            android:fontFamily="@font/inter_semibold"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_width="match_parent"
-            android:text="Next"
-            android:textColor="#FFFFFF"
-            android:textSize="12sp" />
-    </LinearLayout>
-
-</LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        style="@style/style_button_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
