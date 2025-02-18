@@ -16,7 +16,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven("https://jitpack.io") // Correct syntax in Kotlin DSL
+        maven("https://jitpack.io")
     }
 }
 

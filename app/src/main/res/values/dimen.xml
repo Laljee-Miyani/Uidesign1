@@ -15,8 +15,6 @@
 
     <dimen name="paddibg10dp">10dp</dimen>
 
-
-
 <!--    text dimens-->
     <dimen name="tv_primary">24dp</dimen>
     <dimen name="tv_secondary">12dp</dimen>

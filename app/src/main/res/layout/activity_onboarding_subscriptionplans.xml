@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.onboarding.OnboardingSubscriptionPlansActivity">
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
@@ -17,6 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:trackStopIndicatorSize="0dp"
+        app:indicatorTrackGapSize="0dp"
         app:trackColor="#E8E9F1"
         app:trackCornerRadius="4dp"
         app:trackThickness="8dp" />

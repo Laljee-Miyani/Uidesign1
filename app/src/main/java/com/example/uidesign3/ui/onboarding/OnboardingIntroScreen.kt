@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.uidesign3.databinding.ActivityOnboardingIntroScreenBinding
-import com.google.android.material.tabs.TabLayoutMediator
+
 
 class OnboardingIntroScreen : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingIntroScreenBinding
@@ -31,8 +31,8 @@ class OnboardingIntroScreen : AppCompatActivity() {
 
         val adapter = ImagePagerAdapter(this, imageUrls)
         binding.photosViewpager.adapter = adapter
-
-        TabLayoutMediator(binding.tabLayout, binding.photosViewpager) { _, _ -> }.attach()
+        val indicator = binding.indicator
+        indicator.attachToPager(binding.photosViewpager)
 
         binding.button.setOnClickListener {
             val intent = Intent(this, OnboardingSubscriptionPlansActivity::class.java)

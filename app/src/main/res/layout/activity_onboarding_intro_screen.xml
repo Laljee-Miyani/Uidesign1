@@ -2,14 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/photos_viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         android:layout_marginBottom="@dimen/margin_default_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -17,23 +18,26 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:paddingTop="16dp"
             android:orientation="vertical">
 
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tab_layout"
-                android:layout_width="wrap_content"
+            <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/style_dot_indicator"
-                android:background="@android:color/transparent"
-                android:layout_marginStart="@dimen/margin_default_horizontal" />
+                android:layout_marginStart="@dimen/margin_default_horizontal"
+                app:spi_dotColor="@color/unselectedDot"
+                app:spi_dotSelectedColor="@color/selectedDot"
+                app:spi_dotSpacing="8dp"
+                app:spi_dotSize="8dp" />
 
             <TextView
                 style="@style/style_tv_primary"

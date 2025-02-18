@@ -4,8 +4,11 @@
         <shape
             android:innerRadius="0dp"
             android:shape="ring"
-            android:thickness="6dp"
+            android:thickness="8dp"
             android:useLevel="false">
+            <stroke
+                android:width="8dp"
+                android:color="@color/selectedDot"/>
             <solid android:color="@color/selectedDot"/>
         </shape>
     </item>
