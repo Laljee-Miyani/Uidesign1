@@ -15,10 +15,14 @@
         android:theme="@style/Theme.UiDesign3"
         tools:targetApi="31">
         <activity
-            android:name=".ui.onboarding.OnboardingSubscriptionPlansActivity"
+            android:name=".ui.ui.subscriptionplans.SubscriptionPlansActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.ui.onboarding.OnboardingSubscriptionPlansActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.onboarding.OnboardingIntroScreen"
+            android:name=".ui.ui.onboarding.OnboardingIntroScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

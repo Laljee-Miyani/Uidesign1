@@ -1,4 +1,4 @@
-package com.example.uidesign3.ui.onboarding
+package com.example.uidesign3.ui.ui.onboarding
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -24,7 +24,11 @@ class ListItemAdapter(
     override fun getItemId(position: Int): Long = position.toLong()
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        val view: View = convertView ?: inflater.inflate(R.layout.item_unselected_subscription_plans, parent, false)
+        val view: View = convertView ?: inflater.inflate(
+            R.layout.item_unselected_subscription_plans,
+            parent,
+            false
+        )
         val textView: TextView = view.findViewById(R.id.textView)
         textView.text = items[position]
 
