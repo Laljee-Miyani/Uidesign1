@@ -10,6 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/style_interests_tv"
         android:text="@string/user_interface"
         android:padding="16dp"
         app:drawableEndCompat="@drawable/ic_tik_list_item" />

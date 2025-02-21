@@ -4,71 +4,63 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="6dp"
-    android:background="@drawable/subscription_item_background">
+    android:background="@drawable/selector_subscription_plans">
 
     <com.google.android.material.radiobutton.MaterialRadioButton
         android:id="@+id/radioButton"
+        style="@style/RadioButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:button="@drawable/selector_radio_button"
-        android:minWidth="0dp"
-        android:minHeight="0dp"
-        app:buttonTint="@color/radio_button_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/plan_time"
+        style="@style/style_Subscription_tv_plan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_start_plan"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/inter_bold"
         android:text="@string/yearly"
-        android:textColor="@color/grey"
-        android:textSize="17sp"
         app:layout_constraintStart_toEndOf="@+id/radioButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/plan_discount"
+        style="@style/style_Subscription_tv_discount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_start_plan"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="16dp"
         android:text="@string/_66_discount"
-        android:textColor="@color/blue"
-        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioButton"
         app:layout_constraintTop_toBottomOf="@+id/plan_time" />
 
     <TextView
         android:id="@+id/plan_price"
+        style="@style/style_subscription_tv_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/_94_80"
-        android:textColor="@color/grey"
-        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/plan_recharge_time"
+        style="@style/style_Subscription_tv_plan_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/every_year"
-        android:textColor="@color/grey"
-        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plan_price" />
