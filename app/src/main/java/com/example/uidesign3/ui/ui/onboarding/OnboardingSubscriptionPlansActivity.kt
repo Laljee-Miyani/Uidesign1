@@ -1,11 +1,13 @@
-package com.example.uidesign3.ui.onboarding
+package com.example.uidesign3.ui.ui.onboarding
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.uidesign3.databinding.ActivityOnboardingSubscriptionplansBinding
+import com.example.uidesign3.ui.ui.subscriptionplans.SubscriptionPlansActivity
 
 class OnboardingSubscriptionPlansActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingSubscriptionplansBinding
@@ -27,6 +29,10 @@ class OnboardingSubscriptionPlansActivity : AppCompatActivity() {
             updateProgress(selectedCount, items.size)
         }
         binding.listView.adapter = adapter
+        binding.button.setOnClickListener {
+            intent = Intent(this, SubscriptionPlansActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun updateProgress(selectedCount: Int, totalCount: Int) {

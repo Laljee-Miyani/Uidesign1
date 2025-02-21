@@ -3,6 +3,16 @@
     <string name="next">Next</string>
     <string name="onboarding_text">Enjoy these pre-made components and worry only\nabout creating the best product ever.</string>
     <string name="create_a_prototype_in_just_na_few_minutes">Create a prototype in just\na few minutes</string>
-    <string name="personalise_your_experience">Personalise your experience</string>
+    <string name="personalise_your_experience">Personalise your\n experience</string>
     <string name="user_interface">User Interface</string>
+    <string name="choose_your_subscription_plan">Choose your \nsubscription plan</string>
+    <string name="and_get_a_7_day_free_trial">And get a 7-day free trial</string>
+    <string name="choose_your_interests">Choose your interests.</string>
+    <string name="yearly">Yearly</string>
+    <string name="_66_discount">-66% discount</string>
+    <string name="_94_80">€ 94.80</string>
+    <string name="every_year">every year</string>
+    <string name="you_ll_get">You\'ll get:</string>
+    <string name="unlimited_access">Unlimited access</string>
+    <string name="subscribe">Subscribe</string>
 </resources>

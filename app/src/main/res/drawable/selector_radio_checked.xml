@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer Circle (Blue Border) -->
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="20dp"
+                android:height="20dp" />
+            <stroke
+                android:width="7dp"
+                android:color="@color/blue" /> <!-- Use theme-based blue -->
+            <solid android:color="@android:color/transparent" /> <!-- Transparent inner -->
+            <corners android:radius="500dp" />
+        </shape>
+    </item>
+</layer-list>

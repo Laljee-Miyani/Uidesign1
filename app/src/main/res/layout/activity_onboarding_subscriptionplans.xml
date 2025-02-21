@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ui.onboarding.OnboardingSubscriptionPlansActivity">
+    tools:context=".ui.ui.onboarding.OnboardingSubscriptionPlansActivity">
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
         android:id="@+id/progressIndicator"
@@ -38,12 +38,12 @@
 
     <TextView
         android:id="@+id/textView2"
-        style="@style/style_tv_deafult"
+        style="@style/style_tv_default"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_default_horizontal"
         android:layout_marginTop="@dimen/margin_default_vertical"
-        android:text="@string/onboarding_text"
+        android:text="@string/choose_your_interests"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />

@@ -7,7 +7,9 @@
     <color name="selectedDot">#006FFD</color>
     <color name="unselectedDot">#1A1F2024</color>
     <color name="lightGrey">#71727A</color>
-    <color name="lightGreyTv">#7D7D7D</color>
+    <color name="planBg">#F8F9FE</color>
 
     <color name="selectedItemColor">#EAF2FF</color>
+    <color name="unselectedRadioButton">#C5C6CC</color>
+
 </resources>

@@ -1,4 +1,4 @@
-package com.example.uidesign3.ui.onboarding
+package com.example.uidesign3.ui.ui.onboarding
 
 import android.content.Intent
 import android.os.Bundle

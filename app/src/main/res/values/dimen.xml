@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="margin_default_top">48dp</dimen>
     <dimen name="margin_default_horizontal">24dp</dimen>
     <dimen name="margin_default_vertical">24dp</dimen>
+    <dimen name="margin_default_start_tv">36dp</dimen>
     <dimen name="margin_default_vertical_half">12dp</dimen>
     <dimen name="margin_top_default">24dp</dimen>
+    <dimen name="margin_between_tv">16dp</dimen>
 
     <dimen name="margin_button_bottom_default">24dp</dimen>
     <dimen name="margin_button_horizontal_default">24dp</dimen>
@@ -13,10 +16,13 @@
     <dimen name="margin_tv_top_primary">40dp</dimen>
     <dimen name="margin_tv_top_secondary">16dp</dimen>
 
-    <dimen name="paddibg10dp">10dp</dimen>
+
+    <dimen name="margin_start_plan">12dp</dimen>
+    <dimen name="padding10dp">10dp</dimen>
 
 <!--    text dimens-->
-    <dimen name="tv_primary">24dp</dimen>
-    <dimen name="tv_secondary">12dp</dimen>
-    <dimen name="tv_list">14dp</dimen>
+    <dimen name="tv_primary">24sp</dimen>
+    <dimen name="tv_secondary">12sp</dimen>
+    <dimen name="tv_list">14sp</dimen>
+    <dimen name="h3">16sp</dimen>
 </resources>
