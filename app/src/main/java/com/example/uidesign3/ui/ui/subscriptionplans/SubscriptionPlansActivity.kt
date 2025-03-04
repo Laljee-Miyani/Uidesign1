@@ -1,5 +1,6 @@
 package com.example.uidesign3.ui.ui.subscriptionplans
 
+import SubscriptionPlansAdapter
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -25,14 +26,14 @@ class SubscriptionPlansActivity : AppCompatActivity() {
             insets
         }
 
-        subscriptionAdapter = SubscriptionPlansAdapter(getStaticPlans())
-        planDataAdapter = PlanDataAdapter(getPlanData())
-
         setupRecyclerView()
         setupListView()
     }
 
     private fun setupRecyclerView() {
+        subscriptionAdapter = SubscriptionPlansAdapter(getStaticPlans()) { selectedPlan ->
+            // Handle plan selection here
+        }
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(this@SubscriptionPlansActivity)
             adapter = subscriptionAdapter
