@@ -16,14 +16,23 @@
     <dimen name="margin_tv_top_primary">40dp</dimen>
     <dimen name="margin_tv_top_secondary">16dp</dimen>
 
-
+    <dimen name="margin_top_40">40dp</dimen>
+    
     <dimen name="margin_start_plan">12dp</dimen>
     <dimen name="padding10dp">10dp</dimen>
 
+    <dimen name="padding_between_login_ic">12dp</dimen>
+
+<!--    Edit text dimens-->
+    <dimen name="et_padding_horizontal">16dp</dimen>
+    <dimen name="et_padding_vertical">14dp</dimen>
+    <dimen name="et_text_size">14sp</dimen>
+    <dimen name="et_corner_radius">14dp</dimen>
 <!--    text dimens-->
     <dimen name="tv_subscription_plan_time">11dp</dimen>
     <dimen name="tv_primary">24sp</dimen>
     <dimen name="tv_secondary">12sp</dimen>
+    <dimen name="tv_forgot_password">14sp</dimen>
     <dimen name="tv_list">14sp</dimen>
     <dimen name="h3">16sp</dimen>
 </resources>

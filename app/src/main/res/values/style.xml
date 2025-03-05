@@ -73,4 +73,34 @@
         <item name="android:textColor">@color/tvList</item>
         <item name="android:textSize">@dimen/tv_list</item>
     </style>
+
+    <style name="style_et">
+        <item name="background">@drawable/vector_et_bg</item>
+        <item name="android:textColorHint">@color/etHintColor</item>
+        <item name="android:textSize">@dimen/et_text_size</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="style_et_password" parent="">
+        <item name="cornerSize">12dp</item>
+        <item name="cornerSizeTopLeft">12dp</item>
+        <item name="cornerSizeTopRight">12dp</item>
+        <item name="cornerSizeBottomLeft">12dp</item>
+        <item name="cornerSizeBottomRight">12dp</item>
+    </style>
+
+    <style name="Style_tv_clickable">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/tv_forgot_password</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="styleText_InputLayout_pwd" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">@android:color/transparent</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="endIconMode">password_toggle</item>
+        <item name="endIconTint">@color/etHintColor</item>
+    </style>
+
 </resources>

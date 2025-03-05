@@ -57,14 +57,14 @@
         android:divider="@null"
         android:dividerHeight="8dp"
         android:scrollbars="none"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:listitem="@layout/item_unselected_subscription_plans" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/btnNext"
         style="@style/style_button_default"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

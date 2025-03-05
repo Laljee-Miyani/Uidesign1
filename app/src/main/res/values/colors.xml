@@ -13,6 +13,10 @@
     <color name="unselectedRadioButton">#C5C6CC</color>
     <color name="textColorPrimary">#1F2024</color>
     <color name="textColorSecondary">#71727A</color>
-    <color name="dividerColor">#E8E9F1</color>
     <color name="tvList">#1F1F1F</color>
+
+    <color name="etBg">#C5C6CC</color>
+    <color name="etHintColor">#8F9098</color>
+
+    <color name="divider">#D4D6DD</color>
 </resources>

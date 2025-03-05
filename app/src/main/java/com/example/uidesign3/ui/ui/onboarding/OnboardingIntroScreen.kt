@@ -34,7 +34,7 @@ class OnboardingIntroScreen : AppCompatActivity() {
         val indicator = binding.indicator
         indicator.attachToPager(binding.photosViewpager)
 
-        binding.button.setOnClickListener {
+        binding.btnNext.setOnClickListener {
             val intent = Intent(this, OnboardingSubscriptionPlansActivity::class.java)
             startActivity(intent)
         }

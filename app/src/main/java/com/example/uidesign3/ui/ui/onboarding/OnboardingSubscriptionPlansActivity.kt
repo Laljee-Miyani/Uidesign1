@@ -29,7 +29,7 @@ class OnboardingSubscriptionPlansActivity : AppCompatActivity() {
             updateProgress(selectedCount, items.size)
         }
         binding.listView.adapter = adapter
-        binding.button.setOnClickListener {
+        binding.btnNext.setOnClickListener {
             intent = Intent(this, SubscriptionPlansActivity::class.java)
             startActivity(intent)
         }
