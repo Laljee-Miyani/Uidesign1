@@ -24,10 +24,10 @@
     </style>
 
     <style name="style_dot_indicator">
-        <item name="android:background">#FFFFFF</item>
-        <item name="tabBackground">@drawable/selector_dot_indicator</item>
-        <item name="tabGravity">start</item>
-        <item name="tabIndicatorHeight">0dp</item>
+        <item name="spi_dotColor">@color/unselectedDot</item>
+        <item name="spi_dotSelectedColor">@color/selectedDot</item>
+        <item name="spi_dotSpacing">8dp</item>
+        <item name="spi_dotSize">8dp</item>
     </style>
 
     <style name="style_tv_list">
@@ -37,8 +37,40 @@
         <item name="android:textColor">@color/grey</item>
     </style>
 
-    <style name="style_radio_button" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
-        <item name="colorOnSurface">@color/blue</item>
-        <item name="colorSecondary">@color/lightGrey</item>
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/selector_radio_button</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="buttonTint">@color/radio_button_selector</item>
+    </style>
+
+    <style name="style_Subscription_tv_plan">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/tv_list</item>
+    </style>
+
+    <style name="style_subscription_tv_price">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/h3</item>
+    </style>
+
+    <style name="style_Subscription_tv_plan_time">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/tv_subscription_plan_time</item>
+    </style>
+
+    <style name="style_Subscription_tv_discount">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/tv_subscription_plan_time</item>
+    </style>
+
+    <style name="style_interests_tv">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/tvList</item>
+        <item name="android:textSize">@dimen/tv_list</item>
     </style>
 </resources>

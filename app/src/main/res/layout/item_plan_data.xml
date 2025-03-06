@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="horizontal">
-
-    <ImageView
-        android:layout_width="10dp"
-        android:layout_height="10dp"
-        android:src="@drawable/ic_star_filled" />
 
     <TextView
         android:id="@+id/tv_plan"
         style="@style/style_tv_default"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_start_plan"
+        android:drawablePadding="@dimen/margin_start_plan"
         android:text="@string/unlimited_access"
-        android:textSize="@dimen/tv_secondary" />
+        android:textSize="@dimen/tv_secondary"
+        app:drawableStartCompat="@drawable/ic_star_filled" />
 
 </LinearLayout>

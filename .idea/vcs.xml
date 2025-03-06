@@ -11,6 +11,10 @@
           <option name="issueRegexp" value="\(#(\d+)\)" />
           <option name="linkRegexp" value="https://github.com/Laljee-Miyani/Uidesign1/issues/$1" />
         </IssueNavigationLink>
+        <IssueNavigationLink>
+          <option name="issueRegexp" value="\(#(\d+)\)" />
+          <option name="linkRegexp" value="https://github.com/Laljee-Miyani/Uidesign3/issues/$1" />
+        </IssueNavigationLink>
       </list>
     </option>
   </component>

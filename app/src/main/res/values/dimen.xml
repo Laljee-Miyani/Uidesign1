@@ -21,6 +21,7 @@
     <dimen name="padding10dp">10dp</dimen>
 
 <!--    text dimens-->
+    <dimen name="tv_subscription_plan_time">11dp</dimen>
     <dimen name="tv_primary">24sp</dimen>
     <dimen name="tv_secondary">12sp</dimen>
     <dimen name="tv_list">14sp</dimen>
