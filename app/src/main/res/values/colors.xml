@@ -12,6 +12,7 @@
     <color name="selectedItemColor">#EAF2FF</color>
     <color name="unselectedRadioButton">#C5C6CC</color>
     <color name="textColorPrimary">#1F2024</color>
+    <color name="tv_before_et">#2F3036</color>
     <color name="textColorSecondary">#71727A</color>
     <color name="tvList">#1F1F1F</color>
 

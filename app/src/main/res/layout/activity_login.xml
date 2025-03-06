@@ -17,7 +17,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scaleType="center"
+            android:scaleType="fitXY"
             android:src="@drawable/img_login_screen" />
 
         <LinearLayout
@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_top_default"
-                android:background="@drawable/vector_et_bg"
+                android:background="@drawable/vector_et_unselected"
                 android:hint="@string/email_address"
                 android:paddingHorizontal="@dimen/et_padding_horizontal"
                 android:paddingVertical="@dimen/et_padding_vertical" />
@@ -55,7 +55,7 @@
                     style="@style/style_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/vector_et_bg"
+                    android:background="@drawable/vector_et_unselected"
                     android:hint="@string/password"
                     android:inputType="textPassword"
                     android:paddingHorizontal="@dimen/et_padding_horizontal"

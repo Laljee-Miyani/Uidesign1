@@ -1,5 +1,6 @@
 package com.example.uidesign3.ui.login
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -33,5 +34,10 @@ class LoginActivity : AppCompatActivity() {
         Picasso.get()
             .load(imgUrl)
             .into(binding.imageView)
+
+        binding.btnLogin.setOnClickListener {
+            val intent = Intent(this, SigninActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
