@@ -1,4 +1,4 @@
-package com.example.uidesign3.ui.ui.onboarding
+package com.example.uidesign3.ui.onboarding
 
 import android.content.Intent
 import android.os.Bundle
@@ -29,10 +29,8 @@ class OnboardingIntroScreen : AppCompatActivity() {
             "https://picsum.photos/800/500?random=3"
         )
 
-        val adapter = ImagePagerAdapter(this, imageUrls)
-        binding.photosViewpager.adapter = adapter
-        val indicator = binding.indicator
-        indicator.attachToPager(binding.photosViewpager)
+        binding.photosViewpager.adapter = ImagePagerAdapter(this, imageUrls)
+        binding.indicator.attachToPager(binding.photosViewpager)
 
         binding.btnNext.setOnClickListener {
             val intent = Intent(this, OnboardingSubscriptionPlansActivity::class.java)

@@ -1,4 +1,4 @@
-package com.example.uidesign3.ui.ui.subscriptionplans
+package com.example.uidesign3.ui.subscriptionplans
 
 class SubscriptionPlans(
     val planTime: String,

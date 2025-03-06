@@ -1,4 +1,4 @@
-package com.example.uidesign3.ui.ui.subscriptionplans
+package com.example.uidesign3.ui.subscriptionplans
 
 import SubscriptionPlansAdapter
 import android.content.Intent
@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.uidesign3.databinding.ActivitySubscriptionPlansBinding
-import com.example.uidesign3.ui.ui.login.LoginActivity
+import com.example.uidesign3.ui.login.LoginActivity
 
 class SubscriptionPlansActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySubscriptionPlansBinding

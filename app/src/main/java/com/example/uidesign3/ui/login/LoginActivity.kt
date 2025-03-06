@@ -1,4 +1,4 @@
-package com.example.uidesign3.ui.ui.login
+package com.example.uidesign3.ui.login
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.uidesign3.R
 import com.example.uidesign3.databinding.ActivityLoginBinding
+import com.squareup.picasso.Picasso
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -26,5 +27,11 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.tvRegisterNow.setTextColor(ContextCompat.getColor(this, R.color.blue))
+
+        val imgUrl = "https://picsum.photos/800/500?random=1"
+
+        Picasso.get()
+            .load(imgUrl)
+            .into(binding.imageView)
     }
 }

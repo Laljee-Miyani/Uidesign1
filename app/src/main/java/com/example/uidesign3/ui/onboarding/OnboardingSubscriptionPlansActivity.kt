@@ -1,4 +1,4 @@
-package com.example.uidesign3.ui.ui.onboarding
+package com.example.uidesign3.ui.onboarding
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.uidesign3.databinding.ActivityOnboardingSubscriptionplansBinding
-import com.example.uidesign3.ui.ui.subscriptionplans.SubscriptionPlansActivity
+import com.example.uidesign3.ui.subscriptionplans.SubscriptionPlansActivity
 
 class OnboardingSubscriptionPlansActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingSubscriptionplansBinding

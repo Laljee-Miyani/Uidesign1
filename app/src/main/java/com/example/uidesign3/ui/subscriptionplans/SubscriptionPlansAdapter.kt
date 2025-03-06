@@ -8,7 +8,7 @@ import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.uidesign3.R
 import com.example.uidesign3.databinding.ItemSubscriptionPlansBinding
-import com.example.uidesign3.ui.ui.subscriptionplans.SubscriptionPlans
+import com.example.uidesign3.ui.subscriptionplans.SubscriptionPlans
 
 class SubscriptionPlansAdapter(
     private var plans: List<SubscriptionPlans>,

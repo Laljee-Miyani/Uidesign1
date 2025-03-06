@@ -96,10 +96,9 @@
     </style>
 
     <style name="styleText_InputLayout_pwd" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxBackgroundMode">outline</item>
+        <item name="boxBackgroundMode">none</item>
         <item name="boxStrokeColor">@android:color/transparent</item>
         <item name="boxStrokeWidth">0dp</item>
-        <item name="endIconMode">password_toggle</item>
         <item name="endIconTint">@color/etHintColor</item>
     </style>
 

@@ -1,4 +1,4 @@
-package com.example.uidesign3.ui.ui.subscriptionplans
+package com.example.uidesign3.ui.subscriptionplans
 
 import android.view.LayoutInflater
 import android.view.View
