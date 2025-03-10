@@ -45,6 +45,7 @@
             android:layout_marginTop="@dimen/et_margin_top_tv"
             android:background="@drawable/selector_et_bg"
             android:hint="@string/name"
+            android:inputType="textPersonName"
             android:paddingHorizontal="@dimen/et_padding_horizontal"
             android:paddingVertical="@dimen/et_padding_vertical" />
 
@@ -63,6 +64,7 @@
             android:layout_marginTop="@dimen/et_margin_top_tv"
             android:background="@drawable/selector_et_bg"
             android:hint="@string/name_email_com"
+            android:inputType="textEmailAddress"
             android:paddingHorizontal="@dimen/et_padding_horizontal"
             android:paddingVertical="@dimen/et_padding_vertical" />
 
