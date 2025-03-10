@@ -56,7 +56,6 @@ class SubscriptionPlansAdapter(
                 planPrice.text = plan.planPrice
                 planRechargeTime.text = plan.planDuration
 
-                // Hide discount TextView if planDescription is null or empty
                 if (plan.planDescription.isNullOrEmpty()) {
                     planDiscount.visibility = CardView.GONE
                 } else {

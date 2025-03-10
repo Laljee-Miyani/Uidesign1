@@ -117,4 +117,11 @@
         <item name="cursorColor">@color/blue</item>
     </style>
 
+    <style name="style_otp_et" parent="Widget.AppCompat.EditText">
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textCursorDrawable">@drawable/vector_cursor</item>
+    </style>
 </resources>

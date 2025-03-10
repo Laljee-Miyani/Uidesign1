@@ -55,5 +55,4 @@ dependencies {
     implementation ("ru.tinkoff.scrollingpagerindicator:scrollingpagerindicator:1.2.0")
 
     implementation ("com.squareup.picasso:picasso:2.8")
-
 }
