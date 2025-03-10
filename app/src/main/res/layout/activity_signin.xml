@@ -1,143 +1,134 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".ui.login.SigninActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        style="@style/style_tv_semi_primary"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_default_horizontal"
-        android:text="@string/sign_up"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressIndicator" />
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView2"
-        style="@style/style_tv_default"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/create_an_account_to_get_started"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <TextView
+            android:id="@+id/textView"
+            style="@style/style_tv_semi_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default_horizontal"
+            android:text="@string/sign_up" />
 
-    <TextView
-        android:id="@+id/txtName"
-        style="@style/style_tv_before_et"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_default_horizontal"
-        android:text="@string/name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressIndicator" />
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/style_tv_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/create_an_account_to_get_started" />
 
-    <EditText
-        style="@style/style_et"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/et_margin_top_tv"
-        android:background="@drawable/selector_et_bg"
-        android:hint="@string/name"
-        android:paddingHorizontal="@dimen/et_padding_horizontal"
-        android:paddingVertical="@dimen/et_padding_vertical" />
-
-    <TextView
-        android:id="@+id/txtEmailAddress"
-        style="@style/style_tv_before_et"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/tv_margin_top_et"
-        android:text="@string/email_address"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressIndicator" />
-
-    <EditText
-        style="@style/style_et"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/et_margin_top_tv"
-        android:background="@drawable/selector_et_bg"
-        android:hint="@string/name_email_com"
-        android:paddingHorizontal="@dimen/et_padding_horizontal"
-        android:paddingVertical="@dimen/et_padding_vertical" />
-
-    <TextView
-        android:id="@+id/txtPassword"
-        style="@style/style_tv_before_et"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/tv_margin_top_et"
-        android:text="@string/password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressIndicator" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/styleText_InputLayout_pwd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_between_tv"
-        app:endIconMode="password_toggle"
-        app:hintEnabled="false">
+        <TextView
+            android:id="@+id/txtName"
+            style="@style/style_tv_before_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default_horizontal"
+            android:text="@string/name" />
 
         <EditText
             style="@style/style_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/et_margin_top_tv"
             android:background="@drawable/selector_et_bg"
-            android:hint="@string/create_a_passaword"
-            android:inputType="textPassword"
+            android:hint="@string/name"
             android:paddingHorizontal="@dimen/et_padding_horizontal"
             android:paddingVertical="@dimen/et_padding_vertical" />
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/styleText_InputLayout_pwd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_between_tv"
-        app:endIconMode="password_toggle"
-        app:hintEnabled="false">
+        <TextView
+            android:id="@+id/txtEmailAddress"
+            style="@style/style_tv_before_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_margin_top_et"
+            android:text="@string/email_address" />
 
         <EditText
             style="@style/style_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/et_margin_top_tv"
             android:background="@drawable/selector_et_bg"
-            android:hint="@string/confirm_password"
-            android:inputType="textPassword"
+            android:hint="@string/name_email_com"
             android:paddingHorizontal="@dimen/et_padding_horizontal"
             android:paddingVertical="@dimen/et_padding_vertical" />
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.checkbox.MaterialCheckBox
-        style="@style/style_tv_default"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_default_horizontal"
-        android:button="@android:color/transparent"
-        android:padding="12dp"
-        android:text="@string/i_ve_read_and_agree_with_the_terms_and_conditions_and_the_privacy_policy"
-        app:buttonIcon="@drawable/vector_checkbox"
-        app:buttonIconTint="@color/etBg" />
+        <TextView
+            android:id="@+id/txtPassword"
+            style="@style/style_tv_before_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_margin_top_et"
+            android:text="@string/password" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLogin"
-        style="@style/style_button_default"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_top_default"
-        android:text="@string/sign_up" />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/styleText_InputLayout_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_tv"
+            app:endIconMode="password_toggle"
+            app:hintEnabled="false">
+
+            <EditText
+                style="@style/style_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_et_bg"
+                android:hint="@string/create_a_passaword"
+                android:inputType="textPassword"
+                android:paddingHorizontal="@dimen/et_padding_horizontal"
+                android:paddingVertical="@dimen/et_padding_vertical" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/styleText_InputLayout_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_tv"
+            app:endIconMode="password_toggle"
+            app:hintEnabled="false">
+
+            <EditText
+                style="@style/style_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_et_bg"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="@dimen/et_padding_horizontal"
+                android:paddingVertical="@dimen/et_padding_vertical" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            style="@style/style_tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default_horizontal"
+            android:button="@drawable/selector_checkbox"
+            android:padding="12dp"
+            android:text="@string/signup_note"
+            app:buttonTint="@null" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignin"
+            style="@style/style_button_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_default"
+            android:text="@string/sign_up" />
+    </LinearLayout>
+
 </LinearLayout>

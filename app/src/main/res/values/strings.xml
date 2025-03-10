@@ -29,5 +29,5 @@
     <string name="name_email_com">name@email.com</string>
     <string name="create_a_passaword">Create a passaword</string>
     <string name="confirm_password">Confirm password</string>
-    <string name="i_ve_read_and_agree_with_the_terms_and_conditions_and_the_privacy_policy">I\'ve read and agree with the <b><font color="#006FFD" >Terms and\nConditions</font></b> and the <b><font color="#006FFD">Privacy Policy</font></b>.</string>
+    <string name="signup_note">I\'ve read and agree with the <b><font color="#006FFD" >Terms and\nConditions</font></b> and the <b><font color="#006FFD">Privacy Policy</font></b>.</string>
 </resources>

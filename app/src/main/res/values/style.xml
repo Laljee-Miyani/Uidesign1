@@ -35,14 +35,14 @@
         <item name="android:textSize">@dimen/tv_secondary</item>
     </style>
 
-    <style name="style_dot_indicator">
+    <style name="style_dot_indicator" parent="ScrollingPagerIndicator">
         <item name="spi_dotColor">@color/unselectedDot</item>
         <item name="spi_dotSelectedColor">@color/selectedDot</item>
         <item name="spi_dotSpacing">8dp</item>
         <item name="spi_dotSize">8dp</item>
     </style>
 
-    <style name="style_tv_list">
+    <style name="style_tv_list" parent="Widget.AppCompat.TextView">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textSize">@dimen/tv_list</item>
         <item name="android:fontFamily">@font/inter_regular</item>
@@ -56,44 +56,46 @@
         <item name="buttonTint">@color/radio_button_selector</item>
     </style>
 
-    <style name="style_Subscription_tv_plan">
+    <style name="style_Subscription_tv_plan" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:textColor">@color/grey</item>
         <item name="android:textSize">@dimen/tv_list</item>
     </style>
 
-    <style name="style_subscription_tv_price">
+    <style name="style_subscription_tv_price" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:textColor">@color/grey</item>
         <item name="android:textSize">@dimen/h3</item>
     </style>
 
-    <style name="style_Subscription_tv_plan_time">
+    <style name="style_Subscription_tv_plan_time" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/inter_regular</item>
         <item name="android:textColor">@color/grey</item>
         <item name="android:textSize">@dimen/tv_subscription_plan_time</item>
     </style>
 
-    <style name="style_Subscription_tv_discount">
+    <style name="style_Subscription_tv_discount" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/inter_regular</item>
         <item name="android:textColor">@color/blue</item>
         <item name="android:textSize">@dimen/tv_subscription_plan_time</item>
     </style>
 
-    <style name="style_interests_tv">
+    <style name="style_interests_tv" parent="Widget.AppCompat.TextView">
         <item name="fontFamily">@font/inter_regular</item>
         <item name="android:textColor">@color/tvList</item>
         <item name="android:textSize">@dimen/tv_list</item>
     </style>
 
-    <style name="style_et">
+    <style name="style_et" parent="Widget.AppCompat.EditText">
         <item name="background">@drawable/vector_et_unselected</item>
         <item name="android:textColorHint">@color/etHintColor</item>
         <item name="android:textSize">@dimen/et_text_size</item>
         <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textCursorDrawable">@drawable/vector_cursor</item>
     </style>
 
-    <style name="style_et_password" parent="">
+    <style name="style_et_password" parent="Widget.AppCompat.EditText">
         <item name="cornerSize">12dp</item>
         <item name="cornerSizeTopLeft">12dp</item>
         <item name="cornerSizeTopRight">12dp</item>
@@ -101,7 +103,7 @@
         <item name="cornerSizeBottomRight">12dp</item>
     </style>
 
-    <style name="Style_tv_clickable">
+    <style name="Style_tv_clickable" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">@color/blue</item>
         <item name="android:textSize">@dimen/tv_forgot_password</item>
         <item name="fontFamily">@font/inter_semibold</item>
@@ -112,6 +114,7 @@
         <item name="boxStrokeColor">@android:color/transparent</item>
         <item name="boxStrokeWidth">0dp</item>
         <item name="endIconTint">@color/etHintColor</item>
+        <item name="cursorColor">@color/blue</item>
     </style>
 
 </resources>
