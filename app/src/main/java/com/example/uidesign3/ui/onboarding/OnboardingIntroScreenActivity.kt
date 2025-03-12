@@ -9,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.uidesign3.databinding.ActivityOnboardingIntroScreenBinding
 
 
-class OnboardingIntroScreen : AppCompatActivity() {
+class OnboardingIntroScreenActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingIntroScreenBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

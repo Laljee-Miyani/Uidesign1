@@ -34,4 +34,15 @@
     <string name="Confirmation_code_note">A 4-digit code was sent to \nlucasscott3@email.com</string>
     <string name="resend_code">Resend code</string>
     <string name="btncontinue">Continue</string>
+    <string name="settings">Settings</string>
+    <string name="tv_user_name">Lucas Scott</string>
+    <string name="tv_user_subname">\@lucasscott3</string>
+    <string name="saved_messages">Saved Messages</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit">Edit</string>
+    <string name="chat">Chat</string>
+    <string name="search">Search</string>
+    <string name="haley_james">Haley James</string>
+    <string name="stand_up_for_what_you_believe_in">Stand up for what you believe in</string>
+    <string name="_9">9</string>
 </resources>

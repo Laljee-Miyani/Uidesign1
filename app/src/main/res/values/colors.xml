@@ -15,9 +15,14 @@
     <color name="tv_before_et">#2F3036</color>
     <color name="textColorSecondary">#71727A</color>
     <color name="tvList">#1F1F1F</color>
+    <color name="tv_search">#8F9098</color>
 
     <color name="etBg">#C5C6CC</color>
     <color name="etHintColor">#8F9098</color>
 
     <color name="divider">#D4D6DD</color>
+    <color name="bn_ic">#D4D6DD</color>
+    <color name="bn_ic_selected">#006FFD</color>
+    <color name="bn_text">#71727A</color>
+    <color name="bn_text_selected">#1F2024</color>
 </resources>
