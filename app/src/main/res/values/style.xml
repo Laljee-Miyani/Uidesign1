@@ -35,6 +35,13 @@
         <item name="android:textSize">@dimen/tv_secondary</item>
     </style>
 
+    <style name="style_tv_search">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">@dimen/tv_search</item>
+        <item name="hintTextColor">@color/tv_search</item>
+    </style>
+
     <style name="style_dot_indicator" parent="ScrollingPagerIndicator">
         <item name="spi_dotColor">@color/unselectedDot</item>
         <item name="spi_dotSelectedColor">@color/selectedDot</item>

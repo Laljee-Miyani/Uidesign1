@@ -1,5 +1,6 @@
-package com.example.uidesign3.ui.setting
+package com.example.uidesign3.ui.chat
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +20,10 @@ class ChatAdapter(private val chatList: List<ChatItem>) :
             } else {
                 binding.tvMessageCount.visibility = View.VISIBLE
                 binding.tvMessageCount.text = chat.messageCount
+            }
+            binding.root.setOnClickListener {
+                val intent = Intent(binding.root.context, MessagesActivity::class.java)
+                binding.root.context.startActivity(intent)
             }
         }
     }

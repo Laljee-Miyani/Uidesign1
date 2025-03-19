@@ -1,4 +1,4 @@
-package com.example.uidesign3.ui.setting
+package com.example.uidesign3.ui.chat
 
 import android.os.Bundle
 import android.view.LayoutInflater

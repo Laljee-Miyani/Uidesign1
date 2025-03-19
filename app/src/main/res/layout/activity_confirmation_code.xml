@@ -78,12 +78,12 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="28dp"
             android:text="@string/resend_code"
-            app:layout_constraintBottom_toTopOf="@+id/btnSignin"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSignin"
+            android:id="@+id/btnContinue"
             style="@style/style_button_default"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

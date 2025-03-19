@@ -25,4 +25,11 @@
     <color name="bn_ic_selected">#006FFD</color>
     <color name="bn_text">#71727A</color>
     <color name="bn_text_selected">#1F2024</color>
+
+    <color name="msg_receive_bg">#F8F9FE</color>
+    <color name="msg_sent_bg">#006FFD</color>
+    <color name="username_msg_bg_sent">#B4DBFF</color>
+    <color name="username_msg_bg_receive">#71727A</color>
+    <color name="msg_sent">#FFFFFF</color>
+    <color name="msg_receive">#1F2024</color>
 </resources>

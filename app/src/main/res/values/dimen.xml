@@ -13,6 +13,8 @@
     <dimen name="margin_listview_horizontal">16dp</dimen>
     <dimen name="margin_search_horizontal">16dp</dimen>
     <dimen name="margin_bottom_default">24dp</dimen>
+    <dimen name="padding_search_horizontal">16dp</dimen>
+    <dimen name="padding_search_vertical">12dp</dimen>
 
     <dimen name="margin_tv_top_primary">40dp</dimen>
     <dimen name="margin_tv_top_secondary">16dp</dimen>
@@ -36,4 +38,15 @@
     <dimen name="tv_forgot_password">14sp</dimen>
     <dimen name="tv_list">14sp</dimen>
     <dimen name="h3">16sp</dimen>
+    <dimen name="tv_search">14sp</dimen>
+
+    <!--    chat dimens-->
+    <dimen name="chat_tv_username">12sp</dimen>
+    <dimen name="chat_tv_message">14sp</dimen>
+    <dimen name="chat_padding_horizontal">16dp</dimen>
+    <dimen name="chat_padding_vertical">12dp</dimen>
+    <dimen name="chat_margin_end">16dp</dimen>
+    <dimen name="chat_margin_start">15dp</dimen>
+    <dimen name="chat_margin_vertical">10dp</dimen>
+    <dimen name="chat_max_width">241dp</dimen>
 </resources>

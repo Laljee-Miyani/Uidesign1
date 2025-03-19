@@ -1,4 +1,4 @@
-package com.example.uidesign3.ui.setting
+package com.example.uidesign3.ui.chat
 
 data class ChatItem(
     val id: Int,

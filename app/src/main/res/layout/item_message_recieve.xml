@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/chat_margin_start"
+        android:background="@drawable/vector_massage_receive_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/chat_padding_horizontal"
+        android:paddingVertical="@dimen/chat_padding_vertical">
+
+        <TextView
+            android:id="@+id/tv_username_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/username_msg_bg_receive"
+            android:textSize="@dimen/chat_tv_username" />
+
+        <TextView
+            android:id="@+id/tv_Message_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:maxWidth="@dimen/chat_max_width"
+            android:textColor="@color/msg_receive"
+            android:textSize="@dimen/chat_tv_message" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_messageText_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/chat_margin_start"
+        android:background="@drawable/vector_message_receive_secondary"
+        android:maxWidth="@dimen/chat_max_width"
+        android:paddingHorizontal="@dimen/chat_padding_horizontal"
+        android:paddingVertical="@dimen/chat_padding_vertical"
+        android:textColor="@color/msg_receive"
+        android:textSize="@dimen/chat_tv_message" />
+</LinearLayout>

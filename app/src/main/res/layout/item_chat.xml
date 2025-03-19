@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
+    android:background="@color/white"
     android:orientation="horizontal">
 
     <ImageView
@@ -31,6 +32,9 @@
             style="@style/style_tv_default"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fitsSystemWindows="true"
+            android:maxLines="2"
             android:text="@string/stand_up_for_what_you_believe_in" />
     </LinearLayout>
 

@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.setting.ChatFragment">
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.chat.ChatFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
@@ -41,30 +43,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_search_horizontal"
+        android:paddingHorizontal="@dimen/padding_search_horizontal"
+        android:paddingVertical="@dimen/padding_search_vertical"
         android:background="@drawable/vector_search_bg"
         android:gravity="center_vertical">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="12dp"
             android:src="@drawable/ic_search" />
 
-        <TextView
+        <EditText
+            style="@style/style_tv_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:fontFamily="@font/inter_regular"
-            android:text="@string/search"
-            android:textColor="@color/tv_search"
-            android:textSize="14sp" />
+            android:layout_marginStart="@dimen/margin_search_horizontal"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:text="@string/search" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         tools:listitem="@layout/item_chat" />
 </LinearLayout>
