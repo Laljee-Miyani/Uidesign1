@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
             .into(binding.imageView)
 
         binding.btnLogin.setOnClickListener {
-            val intent = Intent(this, SigninActivity::class.java)
+            val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
     }

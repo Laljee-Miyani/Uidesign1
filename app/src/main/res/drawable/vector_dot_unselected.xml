@@ -16,5 +16,5 @@
       android:width="8dp"
       android:height="8dp" />
   <padding android:left="8dp" android:right="8dp" android:bottom="8dp" android:top="8dp"/>
-  <solid android:color="@color/unselectedDot" />
+  <solid android:color="@color/unselected_Dot" />
 </shape>

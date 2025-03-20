@@ -5,12 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     android:background="@color/white"
-    tools:context=".ui.setting.BottomNavActivity">
+    tools:context=".ui.emptyState.BottomNavigationActivity">
 
     <FrameLayout
-        android:id="@+id/flFragment"
+        android:id="@+id/fl_Fragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
@@ -27,11 +26,10 @@
         app:itemActiveIndicatorStyle="@null"
         app:itemIconTint="@color/selector_bn_icon"
         app:itemRippleColor="@null"
-        app:labelVisibilityMode="labeled"
         app:itemTextColor="@color/selector_bn_text"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
-
+        app:menu="@menu/bottom_navigation_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

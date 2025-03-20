@@ -1,9 +1,11 @@
 package com.example.uidesign3.ui.setting
 
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.uidesign3.R
 import com.example.uidesign3.databinding.ActivityBottomNavBinding
+import com.example.uidesign3.ui.chat.ChatFragment
 
 class BottomNavActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBottomNavBinding
@@ -11,7 +13,7 @@ class BottomNavActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBottomNavBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        enableEdgeToEdge()
         supportFragmentManager.beginTransaction()
             .replace(R.id.flFragment, ChatFragment())
             .commit()

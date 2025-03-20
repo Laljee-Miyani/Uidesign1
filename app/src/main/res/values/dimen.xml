@@ -11,6 +11,7 @@
     <dimen name="margin_button_bottom_default">24dp</dimen>
     <dimen name="margin_button_horizontal_default">24dp</dimen>
     <dimen name="margin_listview_horizontal">16dp</dimen>
+    <dimen name="margin_tabLayout_horizontal">16dp</dimen>
     <dimen name="margin_search_horizontal">16dp</dimen>
     <dimen name="margin_bottom_default">24dp</dimen>
     <dimen name="padding_search_horizontal">16dp</dimen>

@@ -5,8 +5,7 @@
             android:innerRadius="3dp"
             android:shape="ring"
             android:useLevel="false">
-            <solid
-                android:color="@color/unselectedDot" />
+            <solid android:color="@color/unselected_Dot" />
             <size android:height="8dp"
                 android:width="8dp"/>
         </shape>

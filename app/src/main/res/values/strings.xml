@@ -47,4 +47,11 @@
     <string name="_9">9</string>
     <string name="brooke_davis">Brooke Davis</string>
     <string name="type_a_message">Type a message…</string>
+    <string name="start_a_project">Start a project</string>
+    <string name="this_is_where_you_ll_find_your_nfinished_projects">This is where you’ll find your\nfinished projects.</string>
+    <string name="nothing_here_for_now">Nothing here. For now.</string>
+    <string name="projects">Projects</string>
+    <string name="explore">Explore</string>
+    <string name="inbox">Inbox</string>
+    <string name="profile">Profile</string>
 </resources>

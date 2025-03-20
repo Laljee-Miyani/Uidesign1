@@ -4,23 +4,24 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#006FFD</color>
     <color name="grey">#1F2024</color>
-    <color name="selectedDot">#006FFD</color>
-    <color name="unselectedDot">#1A1F2024</color>
+    <color name="selected_Dot">#006FFD</color>
+    <color name="unselected_Dot">#1A1F2024</color>
     <color name="lightGrey">#71727A</color>
     <color name="planBg">#F8F9FE</color>
 
-    <color name="selectedItemColor">#EAF2FF</color>
-    <color name="unselectedRadioButton">#C5C6CC</color>
-    <color name="textColorPrimary">#1F2024</color>
+    <color name="selected_Item_Color">#EAF2FF</color>
+    <color name="unselected_Radio_Button">#C5C6CC</color>
+    <color name="text_Color_Primary">#1F2024</color>
     <color name="tv_before_et">#2F3036</color>
-    <color name="textColorSecondary">#71727A</color>
-    <color name="tvList">#1F1F1F</color>
+    <color name="text_Color_Secondary">#71727A</color>
+    <color name="tv_List">#1F1F1F</color>
     <color name="tv_search">#8F9098</color>
 
-    <color name="etBg">#C5C6CC</color>
-    <color name="etHintColor">#8F9098</color>
+    <color name="et_Bg">#C5C6CC</color>
+    <color name="et_Hint_Color">#8F9098</color>
 
     <color name="divider">#D4D6DD</color>
+    <color name="tab_divider">#C5C6CC</color>
     <color name="bn_ic">#D4D6DD</color>
     <color name="bn_ic_selected">#006FFD</color>
     <color name="bn_text">#71727A</color>
@@ -32,4 +33,9 @@
     <color name="username_msg_bg_receive">#71727A</color>
     <color name="msg_sent">#FFFFFF</color>
     <color name="msg_receive">#1F2024</color>
+
+    <color name="tab_layout_bg">#F8F9FE</color>
+    <color name="tab_bg">#FFFFFF</color>
+    <color name="tab_text_color">#71727A</color>
+    <color name="tab_text_color_selected">#1F2024</color>
 </resources>

@@ -19,7 +19,7 @@
 
     <style name="style_tv_semi_primary" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/inter_bold</item>
-        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textColor">@color/text_Color_Primary</item>
         <item name="android:textSize">@dimen/h3</item>
     </style>
 
@@ -37,14 +37,14 @@
 
     <style name="style_tv_search">
         <item name="android:fontFamily">@font/inter_regular</item>
-        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textColor">@color/text_Color_Primary</item>
         <item name="android:textSize">@dimen/tv_search</item>
         <item name="hintTextColor">@color/tv_search</item>
     </style>
 
     <style name="style_dot_indicator" parent="ScrollingPagerIndicator">
-        <item name="spi_dotColor">@color/unselectedDot</item>
-        <item name="spi_dotSelectedColor">@color/selectedDot</item>
+        <item name="spi_dotColor">@color/unselected_Dot</item>
+        <item name="spi_dotSelectedColor">@color/selected_Dot</item>
         <item name="spi_dotSpacing">8dp</item>
         <item name="spi_dotSize">8dp</item>
     </style>
@@ -89,16 +89,16 @@
 
     <style name="style_interests_tv" parent="Widget.AppCompat.TextView">
         <item name="fontFamily">@font/inter_regular</item>
-        <item name="android:textColor">@color/tvList</item>
+        <item name="android:textColor">@color/tv_List</item>
         <item name="android:textSize">@dimen/tv_list</item>
     </style>
 
     <style name="style_et" parent="Widget.AppCompat.EditText">
         <item name="background">@drawable/vector_et_unselected</item>
-        <item name="android:textColorHint">@color/etHintColor</item>
+        <item name="android:textColorHint">@color/et_Hint_Color</item>
         <item name="android:textSize">@dimen/et_text_size</item>
         <item name="fontFamily">@font/inter_regular</item>
-        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textColor">@color/text_Color_Primary</item>
         <item name="android:textCursorDrawable">@drawable/vector_cursor</item>
     </style>
 
@@ -120,7 +120,7 @@
         <item name="boxBackgroundMode">none</item>
         <item name="boxStrokeColor">@android:color/transparent</item>
         <item name="boxStrokeWidth">0dp</item>
-        <item name="endIconTint">@color/etHintColor</item>
+        <item name="endIconTint">@color/et_Hint_Color</item>
         <item name="cursorColor">@color/blue</item>
     </style>
 
@@ -128,7 +128,13 @@
         <item name="android:inputType">numberDecimal</item>
         <item name="android:maxLength">1</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textColor">@color/text_Color_Primary</item>
         <item name="android:textCursorDrawable">@drawable/vector_cursor</item>
     </style>
+
+    <style name="style_tab_text" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 </resources>
