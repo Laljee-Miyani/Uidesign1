@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.feedback.FeedbackActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_blue" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/style_tv_semi_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/feedback" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/style_tv_semi_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/your_project_is_finished"
+                android:textSize="@dimen/h2" />
+
+            <TextView
+                style="@style/style_tv_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/et_margin_top_tv"
+                android:text="@string/how_would_you_rate_the_prototyping_kit" />
+
+            <RatingBar
+                android:id="@+id/rate_us_bar"
+                style="@style/CustomRatingBar"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minWidth="20dp"
+                android:minHeight="20dp"
+                android:numStars="5"
+                android:rating="4"
+                android:stepSize="1" />
+
+            <TextView
+                style="@style/style_tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:text="@string/what_did_you_like_about_it" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_tv"
+                app:chipSpacing="0dp"
+                app:chipSpacingHorizontal="8dp"
+                app:chipSpacingVertical="-9dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_easy"
+                    style="@style/style_Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/easy_to_use"
+                    android:textAppearance="@style/style_chip_text" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_complete"
+                    style="@style/style_Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complete"
+                    android:textAppearance="@style/style_chip_text" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_helpful"
+                    style="@style/style_Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/helpful"
+                    android:textAppearance="@style/style_chip_text" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_convenient"
+                    style="@style/style_Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/convenient"
+                    android:textAppearance="@style/style_chip_text" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_looks_good"
+                    style="@style/style_Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/looks_good"
+                    android:textAppearance="@style/style_chip_text" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                style="@style/style_tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:text="@string/what_could_be_improved" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_tv"
+                app:chipSpacingHorizontal="8dp"
+                app:chipSpacingVertical="-9dp"
+                app:singleSelection="false">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_more_components"
+                    style="@style/style_Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/could_have_more_components"
+                    android:textAppearance="@style/style_chip_text" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_complex"
+                    style="@style/style_Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complex"
+                    android:textAppearance="@style/style_chip_text" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_not_interactive"
+                    style="@style/style_Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/not_interactive"
+                    android:textAppearance="@style/style_chip_text" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_only_english"
+                    style="@style/style_Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/only_english"
+                    android:textAppearance="@style/style_chip_text" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                style="@style/style_tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:text="@string/anything_else" />
+
+            <EditText
+                style="@style/style_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_between_tv"
+                android:background="@drawable/selector_et_bg"
+                android:gravity="top"
+                android:hint="@string/tell_us_everything"
+                android:inputType="textMultiLine"
+                android:minLines="4"
+                android:paddingHorizontal="@dimen/et_padding_horizontal"
+                android:paddingVertical="@dimen/et_padding_vertical" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        style="@style/style_button_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
+        android:layout_marginVertical="@dimen/margin_top_default"
+        android:text="@string/submit" />
+</LinearLayout>

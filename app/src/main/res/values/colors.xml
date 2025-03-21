@@ -38,4 +38,7 @@
     <color name="tab_bg">#FFFFFF</color>
     <color name="tab_text_color">#71727A</color>
     <color name="tab_text_color_selected">#1F2024</color>
+
+    <color name="chip_selected">#006FFD</color>
+    <color name="chip_unselected">#EAF2FF</color>
 </resources>

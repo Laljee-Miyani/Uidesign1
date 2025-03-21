@@ -137,4 +137,28 @@
         <item name="android:textSize">12sp</item>
     </style>
 
+    <style name="CustomRatingBar" parent="@android:style/Widget.DeviceDefault.RatingBar">
+        <item name="android:progressDrawable">@drawable/selector_rating</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:maxHeight">40dp</item>
+    </style>
+
+    <style name="style_Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/selector_btn</item>
+        <item name="android:textColor">@color/selector_btn_txt</item>
+        <item name="chipCornerRadius">50dp</item>
+    </style>
+
+    <style name="style_chip_text" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textSize">@dimen/chip_text</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="style_tv_question" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/text_Color_Primary</item>
+        <item name="android:textSize">@dimen/tv_question</item>
+    </style>
 </resources>

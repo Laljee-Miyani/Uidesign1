@@ -54,4 +54,21 @@
     <string name="explore">Explore</string>
     <string name="inbox">Inbox</string>
     <string name="profile">Profile</string>
+    <string name="feedback">Feedback</string>
+    <string name="your_project_is_finished">Your project is finished.</string>
+    <string name="how_would_you_rate_the_prototyping_kit">How would you rate the prototyping kit?</string>
+    <string name="what_did_you_like_about_it">What did you like about it?</string>
+    <string name="easy_to_use">EASY TO USE</string>
+    <string name="complete">COMPLETE</string>
+    <string name="helpful">HELPFUL</string>
+    <string name="convenient">CONVENIENT</string>
+    <string name="looks_good">LOOKS GOOD</string>
+    <string name="what_could_be_improved">What could be improved?</string>
+    <string name="could_have_more_components">COULD HAVE MORE COMPONENTS</string>
+    <string name="complex">COMPLEX</string>
+    <string name="not_interactive">NOT INTERACTIVE</string>
+    <string name="only_english">ONLY ENGLISH</string>
+    <string name="anything_else">Anything else?</string>
+    <string name="tell_us_everything">Tell us everything.</string>
+    <string name="submit">Submit</string>
 </resources>
