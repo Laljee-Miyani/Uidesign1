@@ -42,6 +42,13 @@
         <item name="hintTextColor">@color/tv_search</item>
     </style>
 
+    <style name="style_search_history" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textCursorDrawable">@drawable/vector_cursor</item>
+    </style>
+
     <style name="style_dot_indicator" parent="ScrollingPagerIndicator">
         <item name="spi_dotColor">@color/unselected_Dot</item>
         <item name="spi_dotSelectedColor">@color/selected_Dot</item>
@@ -121,7 +128,7 @@
         <item name="boxStrokeColor">@android:color/transparent</item>
         <item name="boxStrokeWidth">0dp</item>
         <item name="endIconTint">@color/et_Hint_Color</item>
-        <item name="cursorColor">@color/blue</item>
+        <item name="android:textCursorDrawable">@drawable/vector_cursor</item>
     </style>
 
     <style name="style_otp_et" parent="Widget.AppCompat.EditText">
@@ -156,9 +163,34 @@
         <item name="android:letterSpacing">0.05</item>
     </style>
 
+    <style name="style_tv_filter_chip" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/selector_btn_txt</item>
+        <item name="android:textSize">@dimen/chip_text</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+
     <style name="style_tv_question" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:textColor">@color/text_Color_Primary</item>
         <item name="android:textSize">@dimen/tv_question</item>
     </style>
+
+    <style name="style_tv_recent_search" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/lightGrey</item>
+    </style>
+
+    <style name="style_tv_sort_filter" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="style_tv_filter" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/tv_filter</item>
+    </style>
+
 </resources>

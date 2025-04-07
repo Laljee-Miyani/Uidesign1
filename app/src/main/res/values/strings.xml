@@ -71,4 +71,14 @@
     <string name="anything_else">Anything else?</string>
     <string name="tell_us_everything">Tell us everything.</string>
     <string name="submit">Submit</string>
+    <string name="recent_searches">RECENT SEARCHES</string>
+    <string name="shoes">Shoes</string>
+    <string name="sort">Sort</string>
+    <string name="filter">Filter</string>
+    <string name="_2">2</string>
+    <string name="_12_00">€ 12.00</string>
+    <string name="product_name">Product Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_all">Clear All</string>
+    <string name="category">Category</string>
 </resources>

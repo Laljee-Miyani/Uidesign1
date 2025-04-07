@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fl_chat"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
-    android:fitsSystemWindows="true"
-    tools:context=".ui.chat.ChatFragment">
+    android:orientation="vertical"
+    tools:context=".ui.search.FilterActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
@@ -20,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
-            android:text="@string/edit" />
+            android:text="@string/cancel" />
 
         <TextView
             android:id="@+id/textView"
@@ -28,27 +27,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/chat" />
+            android:text="@string/filter" />
 
-        <ImageButton
+        <TextView
+            android:id="@+id/tv_clear_all"
+            style="@style/Style_tv_clickable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ic_edit_chat" />
-    </com.google.android.material.appbar.MaterialToolbar>
+            android:text="@string/clear_all" />
 
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/item_search"
-        android:layout_marginHorizontal="@dimen/margin_button_horizontal_default" />
+    </com.google.android.material.appbar.MaterialToolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_between_tv"
         android:layout_weight="1"
-        tools:listitem="@layout/item_chat" />
+        tools:listitem="@layout/item_filter" />
 </LinearLayout>

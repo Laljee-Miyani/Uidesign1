@@ -42,6 +42,7 @@
     <dimen name="h2">18sp</dimen>
     <dimen name="tv_search">12sp</dimen>
     <dimen name="tv_question">12sp</dimen>
+    <dimen name="tv_filter">14sp</dimen>
 
     <!--    chat dimens-->
     <dimen name="chat_tv_username">12sp</dimen>
