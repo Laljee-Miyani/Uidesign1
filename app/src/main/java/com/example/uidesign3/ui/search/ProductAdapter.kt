@@ -28,7 +28,6 @@ class ProductAdapter(private val productList: List<Product>) :
         val product = productList[position]
         holder.name.text = product.name
         holder.price.text = "€ ${product.price}"
-//        holder.image.setImageResource(product.imageResId)
         Picasso.get()
             .load(product.imageResId)
             .placeholder(R.drawable.img_onboarding)

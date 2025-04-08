@@ -3,6 +3,8 @@
     <dimen name="margin_default_top">48dp</dimen>
     <dimen name="margin_default_horizontal">24dp</dimen>
     <dimen name="margin_default_vertical">24dp</dimen>
+    <dimen name="margin_between_default">16dp</dimen>
+    <dimen name="padding_between_default">16dp</dimen>
     <dimen name="margin_default_start_tv">36dp</dimen>
     <dimen name="margin_default_vertical_half">12dp</dimen>
     <dimen name="margin_top_default">24dp</dimen>

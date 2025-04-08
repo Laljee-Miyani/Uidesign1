@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.eCommerce.home.ExploreFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
+            android:layout_marginVertical="@dimen/margin_default_vertical"
+            android:src="@drawable/ic_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginHorizontal="@dimen/margin_between_default"
+            android:layout_marginVertical="@dimen/margin_default_vertical"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayout2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="29dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
+            android:layout_marginVertical="@dimen/margin_default_vertical"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageViewCart"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_shopping_bag" />
+
+            <TextView
+                android:id="@+id/textViewBadge"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="end|bottom"
+                android:background="@drawable/vector_chat_counter"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </FrameLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/photos_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:layout_marginVertical="@dimen/margin_default_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+            android:id="@+id/indicator"
+            style="@style/style_dot_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_between_default"
+            app:layout_constraintBottom_toBottomOf="@+id/photos_viewpager"
+            app:layout_constraintEnd_toEndOf="@+id/photos_viewpager"
+            app:layout_constraintStart_toStartOf="@+id/photos_viewpager" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/style_tv_semi_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
+            android:layout_marginVertical="@dimen/margin_default_vertical_half"
+            android:text="@string/perfect_for_you"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photos_viewpager" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Style_tv_clickable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
+            android:layout_marginVertical="@dimen/margin_default_vertical_half"
+            android:padding="2dp"
+            android:text="@string/see_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photos_viewpager" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_between_default"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/padding_between_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            tools:listitem="@layout/item_product1" />
+
+        <TextView
+            android:id="@+id/textViewTitle1"
+            style="@style/style_tv_semi_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
+            android:layout_marginVertical="28dp"
+            android:text="@string/for_this_summer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Style_tv_clickable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
+            android:layout_marginVertical="28dp"
+            android:padding="2dp"
+            android:text="@string/see_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_between_default"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/padding_between_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle1"
+            tools:listitem="@layout/item_product1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

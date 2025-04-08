@@ -81,4 +81,9 @@
     <string name="cancel">Cancel</string>
     <string name="clear_all">Clear All</string>
     <string name="category">Category</string>
+    <string name="categories">Categories</string>
+    <string name="stores">Stores</string>
+    <string name="perfect_for_you">Perfect for you</string>
+    <string name="see_more">See more</string>
+    <string name="for_this_summer">For this summer</string>
 </resources>
