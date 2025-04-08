@@ -4,9 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#006FFD</color>
     <color name="grey">#1F2024</color>
+    <color name="lightGrey">#71727A</color>
+    <color name="naturalGrey">#C5C6CC</color>
+    <color name="lighterGrey">#E8E9F1</color>
     <color name="selected_Dot">#006FFD</color>
     <color name="unselected_Dot">#1A1F2024</color>
-    <color name="lightGrey">#71727A</color>
     <color name="planBg">#F8F9FE</color>
 
     <color name="selected_Item_Color">#EAF2FF</color>

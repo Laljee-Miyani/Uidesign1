@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.eCommerce.product.ProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/photos_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="346dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+                android:layout_marginVertical="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close"
+                app:layout_constraintStart_toStartOf="@+id/photos_viewpager"
+                app:layout_constraintTop_toTopOf="@+id/photos_viewpager" />
+
+            <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                android:id="@+id/indicator"
+                style="@style/style_dot_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_between_default"
+                app:layout_constraintBottom_toBottomOf="@+id/photos_viewpager"
+                app:layout_constraintEnd_toEndOf="@+id/photos_viewpager"
+                app:layout_constraintStart_toStartOf="@+id/photos_viewpager" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/style_tv_semi_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+                android:layout_marginVertical="@dimen/margin_default_vertical"
+                android:text="@string/amazing_t_shirt"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photos_viewpager" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+                android:layout_marginVertical="@dimen/margin_default_vertical"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photos_viewpager" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/style_tv_semi_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/_12_00"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/style_tv_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+                android:layout_marginVertical="@dimen/margin_default_vertical"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/product_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/tv_size"
+                style="@style/style_tv_semi_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+                android:layout_marginVertical="@dimen/margin_top_40"
+                android:text="@string/size"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+                android:layout_marginTop="8dp"
+                app:chipSpacingHorizontal="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_size"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    style="@style/style_Chip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xs"
+                    android:textAppearance="@style/style_chip_text1" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/style_Chip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s"
+                    android:textAppearance="@style/style_chip_text1" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/style_Chip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/m"
+                    android:textAppearance="@style/style_chip_text1" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/style_Chip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/l"
+                    android:textAppearance="@style/style_chip_text1" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/style_Chip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xl"
+                    android:textAppearance="@style/style_chip_text1" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/tv_color"
+                style="@style/style_tv_semi_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+                android:layout_marginTop="32dp"
+                android:text="@string/color"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chipGroup2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/color_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_color"
+                tools:listitem="@layout/item_color" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/style_button_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_button_horizontal_default"
+        android:layout_marginBottom="@dimen/margin_default_vertical"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_add_to_bag" />
+
+        <TextView
+            style="@style/style_button_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_to_bag" />
+    </LinearLayout>
+</LinearLayout>

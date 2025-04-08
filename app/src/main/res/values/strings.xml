@@ -86,4 +86,15 @@
     <string name="perfect_for_you">Perfect for you</string>
     <string name="see_more">See more</string>
     <string name="for_this_summer">For this summer</string>
+    <string name="amazing_t_shirt">Amazing T-Shirt</string>
+    <string name="product_description">The perfect T-shirt for when you want to feel comfortable but still stylish. Amazing for all ocasions.
+Made of 100% cotton fabric in four colours. Its modern style gives a lighter look to the outfit. Perfect for the warmest days.</string>
+    <string name="size">Size</string>
+    <string name="xs">XS</string>
+    <string name="s">S</string>
+    <string name="m">M</string>
+    <string name="l">L</string>
+    <string name="xl">XL</string>
+    <string name="color">Color</string>
+    <string name="add_to_bag">  Add to bag</string>
 </resources>

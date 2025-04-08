@@ -163,6 +163,22 @@
         <item name="android:letterSpacing">0.05</item>
     </style>
 
+    <style name="style_chip_text1" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textSize">@dimen/chip_text</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="style_Chip1" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/selector_btn</item>
+        <item name="android:textColor">@color/selector_btn_txt</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="chipCornerRadius">50dp</item>
+        <item name="chipStartPadding">10dp</item>
+        <item name="chipEndPadding">10dp</item>
+    </style>
+
     <style name="style_tv_filter_chip" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">@color/selector_btn_txt</item>
         <item name="android:textSize">@dimen/chip_text</item>
