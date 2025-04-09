@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_between_default"
+    android:background="@drawable/selector_subscription_plans"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/margin_between_default">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButton"
+            style="@style/RadioButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/payment_type"
+            style="@style/style_Subscription_tv_plan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_plan"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/credit_card"
+            android:textColor="@color/lightGrey"
+            app:layout_constraintStart_toEndOf="@+id/radioButton"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_between_default"
+        android:layout_marginTop="@dimen/margin_default_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plan_time"
+        tools:listitem="@layout/item_card" />
+
+    <LinearLayout
+        android:id="@+id/add_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_add" />
+
+        <TextView
+            android:id="@+id/plan_price"
+            style="@style/Style_tv_clickable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_plan"
+            android:text="@string/add_new_card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+    </LinearLayout>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkbox"
+        style="@style/style_tv_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="@dimen/margin_default_horizontal"
+        android:button="@drawable/selector_checkbox"
+        android:padding="12dp"
+        android:text="@string/checkout_checkbox_note"
+        app:buttonTint="@null" />
+</LinearLayout>

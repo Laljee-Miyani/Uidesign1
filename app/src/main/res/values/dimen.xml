@@ -9,8 +9,8 @@
     <dimen name="margin_default_vertical_half">12dp</dimen>
     <dimen name="margin_top_default">24dp</dimen>
     <dimen name="margin_between_tv">16dp</dimen>
+    <dimen name="margin_start_checkout_step">18.37dp</dimen>
 
-    <dimen name="margin_button_bottom_default">24dp</dimen>
     <dimen name="margin_button_horizontal_default">24dp</dimen>
     <dimen name="margin_listview_horizontal">16dp</dimen>
     <dimen name="margin_tabLayout_horizontal">16dp</dimen>
@@ -45,6 +45,7 @@
     <dimen name="tv_search">12sp</dimen>
     <dimen name="tv_question">12sp</dimen>
     <dimen name="tv_filter">14sp</dimen>
+    <dimen name="tv_checkout_step">12sp</dimen>
 
     <!--    chat dimens-->
     <dimen name="chat_tv_username">12sp</dimen>

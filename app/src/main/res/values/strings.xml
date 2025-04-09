@@ -33,7 +33,7 @@
     <string name="enter_confirmation_code">Enter confirmation code</string>
     <string name="Confirmation_code_note">A 4-digit code was sent to \nlucasscott3@email.com</string>
     <string name="resend_code">Resend code</string>
-    <string name="btncontinue">Continue</string>
+    <string name="btn_continue">Continue</string>
     <string name="settings">Settings</string>
     <string name="tv_user_name">Lucas Scott</string>
     <string name="tv_user_subname">\@lucasscott3</string>
@@ -87,7 +87,7 @@
     <string name="see_more">See more</string>
     <string name="for_this_summer">For this summer</string>
     <string name="amazing_t_shirt">Amazing T-Shirt</string>
-    <string name="product_description">The perfect T-shirt for when you want to feel comfortable but still stylish. Amazing for all ocasions.
+    <string name="product_description">The perfect T-shirt for when you want to feel comfortable but still stylish. Amazing for all occasions.
 Made of 100% cotton fabric in four colours. Its modern style gives a lighter look to the outfit. Perfect for the warmest days.</string>
     <string name="size">Size</string>
     <string name="xs">XS</string>
@@ -104,4 +104,15 @@ Made of 100% cotton fabric in four colours. Its modern style gives a lighter loo
     <string name="separator">/</string>
     <string name="black">Black</string>
     <string name="your_bag">Your bag</string>
+    <string name="_3">3</string>
+    <string name="shipping">Shipping</string>
+    <string name="payment">Payment</string>
+    <string name="review">Review</string>
+    <string name="choose_a_payment_method">Choose a payment method</string>
+    <string name="checkout_note">You won\'t be charged until you review the order on the next page</string>
+    <string name="mastercard">Mastercard</string>
+    <string name="xxxx_xxxx_xxxx_1234">xxxx xxxx xxxx 1234</string>
+    <string name="add_new_card">Add new card</string>
+    <string name="checkout_checkbox_note">My billing address is the same as my shipping address</string>
+    <string name="credit_card">Credit Card</string>
 </resources>

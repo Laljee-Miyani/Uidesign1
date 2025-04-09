@@ -10,6 +10,7 @@
     <color name="selected_Dot">#006FFD</color>
     <color name="unselected_Dot">#1A1F2024</color>
     <color name="planBg">#F8F9FE</color>
+    <color name="checkout_step">#8F9098</color>
 
     <color name="selected_Item_Color">#EAF2FF</color>
     <color name="unselected_Radio_Button">#C5C6CC</color>
