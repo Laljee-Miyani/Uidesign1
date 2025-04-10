@@ -6,8 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.uidesign3.R
 import com.example.uidesign3.databinding.FragmentSearchResultBinding
 
 class SearchResultFragment : Fragment() {
@@ -31,8 +29,7 @@ class SearchResultFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val recyclerView = view.findViewById<RecyclerView>(R.id.rvSearchResults)
-        recyclerView.layoutManager = GridLayoutManager(context, 2)
+        binding.rvSearchResults.layoutManager = GridLayoutManager(context, 2)
 
         val products = listOf(
             Product("Amazing Shoes", 12.00, "https://picsum.photos/200?random=1"),
@@ -42,7 +39,7 @@ class SearchResultFragment : Fragment() {
             Product("Stunning Shoes", 12.00, "https://picsum.photos/200?random=5"),
             Product("Wonderful Shoes", 15.00, "https://picsum.photos/200?random=6")
         )
-        recyclerView.adapter = ProductAdapter(products)
+        binding.rvSearchResults.adapter = ProductAdapter(products)
     }
 
     override fun onDestroyView() {

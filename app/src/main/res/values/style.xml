@@ -76,7 +76,7 @@
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+    <style name="style_radio_button" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:button">@drawable/selector_radio_button</item>
         <item name="android:minWidth">0dp</item>
         <item name="android:minHeight">0dp</item>
@@ -224,6 +224,12 @@
 
     <style name="style_tv_filter" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/tv_filter</item>
+    </style>
+
+    <style name="style_tv_events" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:textColor">@color/grey</item>
         <item name="android:textSize">@dimen/tv_filter</item>
     </style>

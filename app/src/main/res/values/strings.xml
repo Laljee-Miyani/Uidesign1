@@ -115,4 +115,10 @@ Made of 100% cotton fabric in four colours. Its modern style gives a lighter loo
     <string name="add_new_card">Add new card</string>
     <string name="checkout_checkbox_note">My billing address is the same as my shipping address</string>
     <string name="credit_card">Credit Card</string>
+    <string name="near_you">Near you</string>
+    <string name="recife_brazil">Recife, Brazil</string>
+    <string name="mar_05">MAR 05</string>
+    <string name="buy_tickets">Buy tickets</string>
+    <string name="your_events">Your events</string>
+    <string name="selling_out">Selling out</string>
 </resources>

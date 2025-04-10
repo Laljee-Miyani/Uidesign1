@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="12dp"
+    android:background="@android:color/transparent"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@color/product_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/img_onboarding" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:padding="@dimen/et_padding_horizontal">
+
+            <TextView
+                android:id="@+id/product_name"
+                style="@style/style_tv_events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_name" />
+
+            <TextView
+                android:id="@+id/product_place"
+                style="@style/style_tv_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recife_brazil" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_gravity="center|end"
+        android:layout_marginEnd="@dimen/margin_between_default"
+        android:src="@drawable/ic_right_lv" />
+
+</androidx.cardview.widget.CardView>

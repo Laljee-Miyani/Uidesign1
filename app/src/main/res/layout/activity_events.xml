@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.events.EventsActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_default_horizontal"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/etsearch"
+                style="@style/style_search_history"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_search_horizontal"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingVertical="@dimen/padding_search_vertical" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/margin_between_default"
+            tools:listitem="@layout/item_chipgroup" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_between_default"
+            android:layout_marginTop="@dimen/margin_default_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_tv_events"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/near_you" />
+
+            <TextView
+                style="@style/Style_tv_clickable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_more" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_near_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_default"
+            android:clipToPadding="false"
+            android:paddingHorizontal="@dimen/margin_between_default"
+            tools:listitem="@layout/item_product3" />
+
+        <TextView
+            style="@style/style_tv_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_horizontal"
+            android:layout_marginTop="@dimen/margin_top_40"
+            android:text="@string/your_events" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_default"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"
+            android:paddingHorizontal="@dimen/margin_between_default"
+            tools:listitem="@layout/item_product3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_between_default"
+            android:layout_marginTop="@dimen/margin_top_40"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_tv_events"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/selling_out" />
+
+            <TextView
+                style="@style/Style_tv_clickable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_more" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_selling_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_default"
+            android:clipToPadding="false"
+            android:paddingHorizontal="@dimen/margin_between_default"
+            tools:listitem="@layout/item_product3" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
